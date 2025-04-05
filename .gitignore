@@ -30,7 +30,6 @@ build/
 .env.*.local
 
 # IDE files
-.vscode/
 .idea/
 *.swp
 

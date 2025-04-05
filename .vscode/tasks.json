@@ -1,0 +1,38 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+	  {
+		"label": "React Dev Server",
+		"type": "shell",
+		"command": "while [ ! -d './apps/web/node_modules/react' ]; do echo 'Waiting for dependencies to be installed...'; sleep 2; done && cd apps/web && pnpm dev",
+		"isBackground": true,
+		"problemMatcher": {
+		  "owner": "typescript",
+		  "pattern": {
+			"regexp": ".",
+			"file": 1,
+			"location": 2,
+			"message": 3
+		  },
+		  "background": {
+			"activeOnStart": true,
+			"beginsPattern": ".",
+			"endsPattern": "VITE v\\d+\\.\\d+\\.\\d+\\s+ready"
+		  }
+		},
+		"presentation": {
+		  "echo": true,
+		  "reveal": "always",
+		  "focus": false,
+		  "panel": "dedicated",
+		  "clear": false,
+		  "showReuseMessage": false,
+		  "group": "development",
+		  "icon": {
+			"id": "react",
+			"color": "terminal.ansiBlue"
+		  }
+		}
+	  }
+	]
+  }
