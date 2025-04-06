@@ -1,5 +1,5 @@
 {
-	"name": "Scribe",
+	"name": "scribe",
 	"private": true,
 	"version": "0.1.0",
 	"scripts": {
@@ -9,6 +9,8 @@
 	  "build": "pnpm -r build",
 	  "lint": "pnpm -r lint",
 	  "test": "pnpm -r test",
-	  "clean": "pnpm -r exec -- rm -rf node_modules dist .turbo && rm -rf node_modules"
+	  "clean": "pnpm -r exec -- rm -rf node_modules dist .turbo && rm -rf node_modules",
+	  "docker:dev": "docker compose -f infra/docker/dev/docker-compose.yml up",
+	  "docker:dev:build": "docker compose -f infra/docker/dev/docker-compose.yml up --build"
 	}
   }
