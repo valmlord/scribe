@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/workspaces/Scribe
+      - app-node-modules:/workspaces/Scribe/node_modules
+      - app-web-node-modules:/workspaces/Scribe/apps/web/node_modules
+      - app-shared-node-modules:/workspaces/Scribe/packages/shared/node_modules
+    ports:
+      - "5173:5173"
+    command: pnpm dev
+    environment:
+      - NODE_ENV=development
+
+volumes:
+  app-node-modules:
+  app-web-node-modules:
+  app-shared-node-modules:

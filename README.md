@@ -1,6 +1,6 @@
-# Scriberlify
+# Scribe
 
-Scriberlify is a cross-platform application built with modern technologies and a clean, user-friendly UI/UX.
+Scribe is a cross-platform application built with modern technologies and a clean, user-friendly UI/UX.
 
 ## 📦 Tech Stack
 

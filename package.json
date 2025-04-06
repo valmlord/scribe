@@ -1,0 +1,14 @@
+{
+	"name": "Scribe",
+	"private": true,
+	"version": "0.1.0",
+	"scripts": {
+	  "setup": "pnpm install && pnpm -r install",
+	  "dev": "pnpm --filter web dev",
+	  "dev:all": "pnpm -r --parallel dev",
+	  "build": "pnpm -r build",
+	  "lint": "pnpm -r lint",
+	  "test": "pnpm -r test",
+	  "clean": "pnpm -r exec -- rm -rf node_modules dist .turbo && rm -rf node_modules"
+	}
+  }

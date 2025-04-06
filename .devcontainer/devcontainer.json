@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
 {
-	"name": "Scriberlify",
+	"name": "Scribe",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/base:jammy",
 	"features": {
@@ -12,16 +12,23 @@
 	"forwardPorts": [
 		5173
 	],
+	"remoteEnv": {
+        "SHELL": "/bin/bash"
+    },
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "cd apps/web && pnpm install",
+	"postCreateCommand": "pnpm setup",
 	// Configure tool-specific properties.
 	"customizations": {
 		"vscode": {
 			"extensions": [
 				"spmeesseman.vscode-taskexplorer",
 				"dbaeumer.vscode-eslint",
-				"esbenp.prettier-vscode"
-			]
+				"esbenp.prettier-vscode",
+				"ms-azuretools.vscode-docker"
+			],
+			"settings": {
+			  "terminal.integrated.defaultProfile.linux": "bash"
+			}
 		}
 	}
 	// Features to add to the dev container. More info: https://containers.dev/features.
