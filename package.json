@@ -12,6 +12,8 @@
     "clean": "pnpm -r exec -- rm -rf node_modules dist .turbo && rm -rf node_modules",
     "docker:up": "docker-compose -f infra/docker/docker-compose.yml up -d",
     "docker:down": "docker-compose -f infra/docker/docker-compose.yml down",
-    "docker:logs": "docker-compose -f infra/docker/docker-compose.yml logs -f"
+    "docker:logs": "docker-compose -f infra/docker/docker-compose.yml logs -f",
+    "quality": "./infra/scripts/code-climate.sh analyze",
+    "quality:open": "./infra/scripts/code-climate.sh analyze -f html > codeclimate.html && open codeclimate.html"
   }
 }
