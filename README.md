@@ -33,13 +33,62 @@ Scribe is a cross-platform application built with modern technologies and a clea
 
 ### 🏗️ Project Structure
 
-scribe/
-├── apps/              # Applications
-│   ├── mobile/        # Mobile app (React Native)
-│   └── web/           # Web app (React)
-├── packages/          # Shared packages
-│   └── shared/        # Shared code (UI components, utilities, types)
-└── [docker-compose.yml](http://_vscodecontentref_/0) # Docker configuration
+ $ tree
+.
+├── apps
+│   └── web
+│       ├── eslint.config.js
+│       ├── index.html
+│       ├── package.json
+│       ├── pnpm-lock.yaml
+│       ├── public
+│       ├── README.md
+│       ├── src
+│       │   ├── App.css
+│       │   ├── App.tsx
+│       │   ├── assets
+│       │   ├── index.css
+│       │   ├── main.tsx
+│       │   └── vite-env.d.ts
+│       ├── tsconfig.app.json
+│       ├── tsconfig.json
+│       ├── tsconfig.node.json
+│       └── vite.config.ts
+├── infra
+│   ├── ci
+│   │   ├── github-actions
+│   │   ├── README.md
+│   │   └── templates
+│   │       └── README.md
+│   ├── docker
+│   │   ├── docker-compose.yml
+│   │   └── Dockerfile
+│   └── scripts
+│       └── docker.sh
+├── node_modules
+├── package.json
+├── packages
+│   └── shared
+│       ├── eslint.config.js
+│       ├── package.json
+│       ├── src
+│       │   ├── api
+│       │   │   └── index.ts
+│       │   ├── components
+│       │   │   └── index.ts
+│       │   ├── hooks
+│       │   │   └── index.ts
+│       │   ├── index.ts
+│       │   ├── types
+│       │   │   └── index.ts
+│       │   └── utils
+│       │       └── index.ts
+│       └── tsconfig.json
+├── pnpm-lock.yaml
+├── pnpm-workspace.yaml
+├── README.md
+├── renovate.json
+└── services
 
 ### 📋 Available Commands
 

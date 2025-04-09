@@ -6,7 +6,8 @@
 	"image": "mcr.microsoft.com/devcontainers/base:jammy",
 	"features": {
 		"ghcr.io/devcontainers-extra/features/node-asdf:0": {},
-		"ghcr.io/devcontainers-extra/features/pnpm:2": {}
+		"ghcr.io/devcontainers-extra/features/pnpm:2": {},
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {}			
 	},
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [
@@ -25,7 +26,9 @@
 				"dbaeumer.vscode-eslint",
 				"esbenp.prettier-vscode",
 				"ms-azuretools.vscode-docker",
-				"GitHub.vscode-github-actions"
+				"GitHub.vscode-github-actions",
+				"GitHub.github-vscode-theme",
+				"PKief.material-icon-theme"
 			],
 			"settings": {
 			  "terminal.integrated.defaultProfile.linux": "bash"

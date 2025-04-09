@@ -36,3 +36,8 @@ build/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Docker artifacts
+infra/docker/apps/
+infra/docker/node_modules/
+infra/docker/packages/

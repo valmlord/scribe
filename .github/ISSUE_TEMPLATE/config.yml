@@ -1,0 +1,9 @@
+<!-- filepath: /workspaces/scribe/.github/ISSUE_TEMPLATE/config.yml -->
+blank_issues_enabled: false
+contact_links:
+  - name: Scribe Discussions
+    url: https://github.com/valmlord/scribe/discussions
+    about: Please ask general questions and discuss ideas here
+  - name: Documentation
+    url: https://github.com/valmlord/scribe#readme
+    about: Check out our documentation before submitting an issue

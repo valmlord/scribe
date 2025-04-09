@@ -1,12 +1,10 @@
-version: '3.8'
-
 services:
   app:
     build:
-      context: .
-      dockerfile: Dockerfile
+      context: ../..
+      dockerfile: infra/docker/Dockerfile
     volumes:
-      - .:/workspaces/Scribe
+      - ../..:/workspaces/Scribe:delegated
       - app-node-modules:/workspaces/Scribe/node_modules
       - app-web-node-modules:/workspaces/Scribe/apps/web/node_modules
       - app-shared-node-modules:/workspaces/Scribe/packages/shared/node_modules
