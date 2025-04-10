@@ -8,6 +8,7 @@ GitHub requires workflow files to be located in `.github/workflows/`. The actual
 
 - [CI Pipeline](../../.github/workflows/ci.yml) - Runs tests and builds the application
 - [Deployment Pipeline](../../.github/workflows/deploy.yml) - Handles deployment to various environments
+- [Tests Pipeline](../../.github/workflows/tests.yml) - Runs automated tests on push and pull requests
 
 ## Local Development with Docker
 
