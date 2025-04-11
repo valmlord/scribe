@@ -33,7 +33,7 @@ Scribe is a cross-platform application built with modern technologies and a clea
 
 ### 🏗️ Project Structure
 
- $ tree
+```bash
 .
 ├── apps
 │   └── web
@@ -89,6 +89,7 @@ Scribe is a cross-platform application built with modern technologies and a clea
 ├── README.md
 ├── renovate.json
 └── services
+```
 
 ### 📋 Available Commands
 
