@@ -1,3 +1,7 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/f0e82214a4414ed29c27/maintainability)](https://codeclimate.com/github/valmlord/scribe/maintainability)
+
+[![Test Coverage](https://api.codeclimate.com/v1/badges/f0e82214a4414ed29c27/test_coverage)](https://codeclimate.com/github/valmlord/scribe/test_coverage)
+
 # Scribe
 
 Scribe is a cross-platform application built with modern technologies and a clean, user-friendly UI/UX.
