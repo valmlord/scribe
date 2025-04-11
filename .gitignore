@@ -44,3 +44,8 @@ infra/docker/packages/
 
 # Temporary files
 codeclimate.html
+
+# Test coverage
+coverage/
+**/coverage/
+.nyc_output/
