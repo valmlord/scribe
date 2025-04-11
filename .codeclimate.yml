@@ -32,19 +32,51 @@ checks:
     enabled: true
     config:
       threshold: 4
+  similar-code:
+    enabled: true
+    config:
+      threshold: 70
+  identical-code:
+    enabled: true
+    config:
+      threshold: 50
 
 exclude_patterns:
+  - "packages/shared/coverage/**"
   - "node_modules/"
+  - "**/node_modules/"
   - "**/*.d.ts"
   - "**/*.test.ts"
   - "**/*.test.tsx"
+  - "**/*.spec.ts"
+  - "**/*.spec.tsx"
   - "**/dist/"
+  - "**/build/"
   - "**/*.config.js"
   - "**/*.config.ts"
+  - ".github/"
+  - ".vscode/"
+  - ".devcontainer/"
+  - "coverage/"
+  - "reports/"
+  - ".pnpm-store/"
+  - "**/__mocks__/"
+  - "**/__tests__/"
+  - "**/test/"
+  - "**/tests/"
+  - "**/coverage/**"
+  - "**/.pnpm-store/**"
 
 plugins:
   eslint:
     enabled: true
+    channel: "eslint-9"
+    config:
+      extensions:
+        - .js
+        - .jsx
+        - .ts
+        - .tsx
   tslint:
     enabled: true
   sonar-typescript:
@@ -57,3 +89,20 @@ plugins:
           mass_threshold: 45
         javascript:
           mass_threshold: 45
+  fixme:
+    enabled: true
+    config:
+      strings:
+        - TODO
+        - FIXME
+        - BUG
+        - HACK
+        - XXX
+  git-legal:
+    enabled: true
+  markdownlint:
+    enabled: true
+  shellcheck:
+    enabled: true
+  nodesecurity:
+    enabled: true

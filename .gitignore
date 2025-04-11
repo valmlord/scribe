@@ -42,8 +42,8 @@ infra/docker/apps/
 infra/docker/node_modules/
 infra/docker/packages/
 
-# Temporary files
-codeclimate.html
+# Code Climate reports
+/reports/
 
 # Test coverage
 coverage/

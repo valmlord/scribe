@@ -15,7 +15,10 @@
     "docker:down": "docker-compose -f infra/docker/docker-compose.yml down",
     "docker:logs": "docker-compose -f infra/docker/docker-compose.yml logs -f",
     "quality": "./infra/scripts/code-climate.sh analyze",
-    "quality:open": "./infra/scripts/code-climate.sh analyze -f html > codeclimate.html && open codeclimate.html"
+    "quality:html": "./infra/scripts/code-climate.sh analyze -f html",
+    "quality:html:open": "./infra/scripts/code-climate.sh analyze -f html -o",
+    "quality:json": "./infra/scripts/code-climate.sh analyze -f json",
+    "quality:init": "./infra/scripts/code-climate.sh engines:install"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.6.3",
