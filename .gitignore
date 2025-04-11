@@ -49,3 +49,6 @@ infra/docker/packages/
 coverage/
 **/coverage/
 .nyc_output/
+
+# Copilot prompt
+.github/copilot-config.md
