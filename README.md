@@ -1,6 +1,4 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/f0e82214a4414ed29c27/maintainability)](https://codeclimate.com/github/valmlord/scribe/maintainability)
-
-[![Test Coverage](https://api.codeclimate.com/v1/badges/f0e82214a4414ed29c27/test_coverage)](https://codeclimate.com/github/valmlord/scribe/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/f0e82214a4414ed29c27/maintainability)](https://codeclimate.com/github/valmlord/scribe/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/f0e82214a4414ed29c27/test_coverage)](https://codeclimate.com/github/valmlord/scribe/test_coverage)
 
 # Scribe
 
