@@ -1,10 +1,10 @@
 # GitHub Issue & Pull Request Templates
 
-GitHub требует, чтобы шаблоны находились в директории `.github/`. Ссылки на фактические файлы:
+GitHub requires templates to be in the `.github/` directory. Links to the actual files:
 
-## Шаблоны для Issues
+## Templates for Issues
 - [Bug Report](../../../.github/ISSUE_TEMPLATE/bug_report.md)
 - [Feature Request](../../../.github/ISSUE_TEMPLATE/feature_request.md)
 
-## Шаблон для Pull Request
+## Templates for Pull Request
 - [Pull Request Template](../../../.github/PULL_REQUEST_TEMPLATE.md)
