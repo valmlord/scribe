@@ -13,8 +13,21 @@ services:
     command: pnpm dev
     environment:
       - NODE_ENV=development
+  postgres:
+    image: postgres:17
+    container_name: scribe-postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: scribe
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
 
 volumes:
+  postgres-data:
   app-node-modules:
   app-web-node-modules:
   app-shared-node-modules:
