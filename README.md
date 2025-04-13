@@ -39,15 +39,6 @@ Scribe is a cross-platform application built with modern technologies and a clea
 .
 
 ├── __tests__
-│     ├── apps
-│     ├── mocks
-│     │   └── fileMock.js
-│     ├── packages
-│     │   └── shared
-│     │       └── src
-│     │           └── utils
-│     │               └── stringUtils.test.ts
-│     └── setup.ts
 ├── apps
 │   └── web
 │       ├── eslint.config.js
@@ -55,27 +46,13 @@ Scribe is a cross-platform application built with modern technologies and a clea
 │       ├── package.json
 │       ├── pnpm-lock.yaml
 │       ├── public
-│       │   └── scribe-logo.svg
 │       ├── README.md
 │       ├── src
-│       │   ├── App.css
-│       │   ├── App.tsx
-│       │   ├── assets
-│       │   │   └── react.svg
-│       │   ├── index.css
-│       │   ├── main.tsx
-│       │   └── vite-env.d.ts
 │       ├── tsconfig.app.json
 │       ├── tsconfig.json
 │       ├── tsconfig.node.json
 │       └── vite.config.ts
 ├── infra
-│   ├── ci
-│   │   ├── README.md
-│   │   └── templates
-│   │       └── README.md
-│   ├── code-quality
-│   │   └── README.md
 │   ├── docker
 │   │   ├── docker-compose.yml
 │   │   └── Dockerfile
@@ -92,19 +69,13 @@ Scribe is a cross-platform application built with modern technologies and a clea
 │       ├── package.json
 │       ├── src
 │       │   ├── api
-│       │   │   └── index.ts
 │       │   ├── components
-│       │   │   └── index.ts
 │       │   ├── db
 │       │   ├── hooks
-│       │   │   └── index.ts
 │       │   ├── index.ts
 │       │   ├── services
 │       │   ├── types
-│       │   │   └── index.ts
 │       │   └── utils
-│       │       ├── index.ts
-│       │       └── stringUtils.ts
 │       └── tsconfig.json
 ├── pnpm-lock.yaml
 ├── pnpm-workspace.yaml
