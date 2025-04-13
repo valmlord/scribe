@@ -37,6 +37,17 @@ Scribe is a cross-platform application built with modern technologies and a clea
 
 ```bash
 .
+
+├── __tests__
+│     ├── apps
+│     ├── mocks
+│     │   └── fileMock.js
+│     ├── packages
+│     │   └── shared
+│     │       └── src
+│     │           └── utils
+│     │               └── stringUtils.test.ts
+│     └── setup.ts
 ├── apps
 │   └── web
 │       ├── eslint.config.js
@@ -44,11 +55,13 @@ Scribe is a cross-platform application built with modern technologies and a clea
 │       ├── package.json
 │       ├── pnpm-lock.yaml
 │       ├── public
+│       │   └── scribe-logo.svg
 │       ├── README.md
 │       ├── src
 │       │   ├── App.css
 │       │   ├── App.tsx
 │       │   ├── assets
+│       │   │   └── react.svg
 │       │   ├── index.css
 │       │   ├── main.tsx
 │       │   └── vite-env.d.ts
@@ -58,16 +71,20 @@ Scribe is a cross-platform application built with modern technologies and a clea
 │       └── vite.config.ts
 ├── infra
 │   ├── ci
-│   │   ├── github-actions
 │   │   ├── README.md
 │   │   └── templates
 │   │       └── README.md
+│   ├── code-quality
+│   │   └── README.md
 │   ├── docker
 │   │   ├── docker-compose.yml
 │   │   └── Dockerfile
-│   └── scripts
-│       └── docker.sh
-├── node_modules
+│   ├── scripts
+│   │   ├── code-climate.sh
+│   │   └── docker.sh
+│   └── testing
+│       ├── jest.config.js
+│       └── setup.ts
 ├── package.json
 ├── packages
 │   └── shared
@@ -78,19 +95,21 @@ Scribe is a cross-platform application built with modern technologies and a clea
 │       │   │   └── index.ts
 │       │   ├── components
 │       │   │   └── index.ts
+│       │   ├── db
 │       │   ├── hooks
 │       │   │   └── index.ts
 │       │   ├── index.ts
+│       │   ├── services
 │       │   ├── types
 │       │   │   └── index.ts
 │       │   └── utils
-│       │       └── index.ts
+│       │       ├── index.ts
+│       │       └── stringUtils.ts
 │       └── tsconfig.json
 ├── pnpm-lock.yaml
 ├── pnpm-workspace.yaml
 ├── README.md
 ├── renovate.json
-└── services
 ```
 
 ### 📋 Available Commands

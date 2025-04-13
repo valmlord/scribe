@@ -1,4 +1,4 @@
-import { capitalize, truncate, toSnakeCase } from '../utils/stringUtils';
+import { capitalize, truncate, toSnakeCase } from '../../../../../packages/shared/src/utils/stringUtils';
 
 describe('String utils', () => {
   describe('capitalize', () => {
