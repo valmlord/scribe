@@ -16,7 +16,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.11.0",
+  "packageManager": "pnpm@10.11.1",
   "devDependencies": {
     "eslint": "^9.24.0",
     "typescript": "~5.8.3",
